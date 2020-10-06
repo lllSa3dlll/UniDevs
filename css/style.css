@@ -12,7 +12,6 @@ html
 {
   overflow-x: hidden;
 }
-  
 body
 {
     background-color: #090909;
@@ -21,7 +20,8 @@ body
 ::-webkit-scrollbar
 {
     width:12px;
-    background:white
+    background:white;
+    border-radius: 5px;
 }
 ::-webkit-scrollbar-thumb
 {
@@ -67,7 +67,7 @@ header
 {
   background:#0D0D0D !important;
   padding:0.5rem !important;
-  box-shadow: 5px 5px 10px black;
+
   transition:0.7s;
 }
 .navbar
@@ -387,7 +387,6 @@ header
   color:white;
   position: relative;
   top:-2rem;
-  margin:0 5rem;
 }
 .reviews .reviewPanel .clientParagraph span
 {
@@ -434,6 +433,51 @@ header
 /*End of Footer Section*/
 
 
+/*Start of form section*/
+
+.form-container
+{
+  margin:6rem;
+}
+.form-container h1
+{
+  color:white
+}
+.form-container input
+{
+  border:none;
+  background:#1b1b1b;
+  border-radius: 50px;
+  padding-top:1.3rem;
+  padding-bottom:1.3rem;
+}
+.form-container input::placeholder
+{
+  color:#555555
+}
+.form-container .btn-block
+{
+  background: linear-gradient(267.12deg, #FF8E75 -3.06%, #FF4242 100%);
+  border-radius: 50px;
+  padding:1rem;
+  font-size:15px;
+ text-transform: capitalize;
+}
+.form-container .googleBtn
+{
+  background:white;
+  color:#555555;
+  padding:1rem;
+  border-radius: 50px;
+  font-size:18px;
+}
+.googleIcon
+{
+  width:1.6rem;
+  height:1.6rem;
+}
+/*End of form section*/
+
 
 /*Start of Media query*/
 
@@ -450,6 +494,11 @@ header
     .view
     {
       height: 700px;
+    }
+    .reverse
+    {
+      display: flex;
+      flex-direction: column-reverse;
     }
     .aboutDiv
     {
@@ -482,6 +531,13 @@ header
    {
     display: none;
    }
+   .reviews .reviewPanel
+   {
+     padding-top:4rem;
+     padding-bottom:4rem;
+     padding-left:0.5rem;
+     padding-right:0.5rem
+   }
    .reviews .reviewPanel .clientParagraph
    {
     margin:0
@@ -489,6 +545,10 @@ header
    .reviews .carousel-indicators
    {
     top:45rem;
+   }
+   .form-container
+   {
+    margin-bottom:2rem !important;
    }
 }
 
@@ -505,6 +565,11 @@ header
     .view
     {
       height: 700px;
+    }
+    .reverse
+    {
+      display: flex;
+      flex-direction: column-reverse;
     }
     .aboutDiv
     {
@@ -532,6 +597,13 @@ header
     {
      display: none;
     }
+    .reviews .reviewPanel
+    {
+      padding-top:4rem;
+      padding-bottom:4rem;
+      padding-left:0.5rem;
+      padding-right:0.5rem
+    }
     .reviews .reviewPanel .clientParagraph
     {
      margin:0
@@ -540,6 +612,7 @@ header
     {
      top:35rem;
     }
+ 
   
  }
 
@@ -597,6 +670,7 @@ header
     {
      top:33rem;
     }
+    
 }
 
 /*Large devices (desktops, less than 1200px)*/
