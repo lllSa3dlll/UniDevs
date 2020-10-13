@@ -60,14 +60,12 @@ body
 /*Start of header*/
 header
 {
-    height:100vh;
- 
+    height:107vh;
 }
 .effect
 {
   background:#0D0D0D !important;
   padding:0.5rem !important;
-
   transition:0.7s;
 }
 .navbar
@@ -99,7 +97,6 @@ header
     box-shadow: 0px 2px 20px rgba(255, 125, 108, 0.4);
     padding:10px 25px !important;
 }
-
 .navbar-brand
 {
     margin:none !important;
@@ -163,6 +160,22 @@ header
     animation: move-wheel .8s linear infinite;
 }
 
+.imgDecor img
+{
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+}
+.headerDiv .imgDecor img
+{
+  width:5rem;
+}
+.imageDiv .imgDecor img
+{
+  width:5rem;
+  float:right
+}
 /*End of header*/
 
 
@@ -495,6 +508,10 @@ header
     {
       height: 700px;
     }
+    .imgDecor
+    {
+      display: none;
+    }
     .reverse
     {
       display: flex;
@@ -566,6 +583,10 @@ header
     {
       height: 700px;
     }
+    .imgDecor
+    {
+      display: none;
+    }
     .reverse
     {
       display: flex;
@@ -629,6 +650,10 @@ header
       width:95%;
       height:37vh;
     } 
+    .imgDecor
+    {
+      display: none;
+    }
   html,
     body,
     header,
@@ -701,4 +726,13 @@ header
       transform: rotate(360deg);
     }
   }
+
+  @keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
 /*End of Keyframes*/

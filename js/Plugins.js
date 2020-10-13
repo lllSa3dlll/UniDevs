@@ -64,10 +64,10 @@ $('a[href*="#"]')
 
    
 
-  $(".block3").fadeOut(2000,
+  $(".block3").fadeOut(800,
     function()
     {
-      $(this).parent().fadeOut(1500,
+      $(this).parent().fadeOut(800,
         function()
         {
           $(this).remove();
